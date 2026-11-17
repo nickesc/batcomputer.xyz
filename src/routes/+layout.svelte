@@ -27,10 +27,8 @@
 
 		<footer class="site-footer">
 			<p>By <a href="https://nickesc.io">nickesc</a></p>
-			<a href="https://github.com/nickesc">GitHub<span aria-hidden="true">↗</span></a>
-			<a href="https://github.com/nickesc/batcomputer.xyz">
-				Source<span aria-hidden="true">↗</span>
-			</a>
+			<a href="https://github.com/nickesc">GitHub</a>
+			<a href="https://github.com/nickesc/batcomputer.xyz">Source</a>
 		</footer>
 	</div>
 </div>
@@ -131,8 +129,6 @@
 		position: absolute;
 		inset-block-start: 0.5rem;
 		inset-inline-start: 1rem;
-		padding-block: 0.75rem;
-		padding-inline: 1rem;
 		background: var(--ink);
 		color: var(--paper);
 		z-index: 2;
@@ -158,12 +154,6 @@
 		border-block-start: 1px solid var(--rule);
 		color: var(--quiet);
 		font-size: 0.6875rem;
-	}
-	.site-footer a {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.35rem;
-		min-block-size: 44px;
 	}
 	.site-footer p a {
 		color: var(--muted);
