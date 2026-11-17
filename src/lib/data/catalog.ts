@@ -16,8 +16,8 @@ export type Group = {
 
 export const groups: Group[] = [
 	{
-		id: 'game-tools',
-		name: 'Game tools',
+		id: 'tools',
+		name: 'Tools',
 		color: 'green',
 		projects: [
 			{
@@ -43,8 +43,8 @@ export const groups: Group[] = [
 		]
 	},
 	{
-		id: 'experiments',
-		name: 'Experiments',
+		id: 'demos',
+		name: 'Demos',
 		color: 'yellow',
 		projects: [
 			{

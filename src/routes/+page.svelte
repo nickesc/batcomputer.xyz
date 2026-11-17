@@ -30,16 +30,7 @@
 <main class="groups" id="collection" tabindex="-1">
 	{#each groups as group}
 		<section class="project-group color-{group.color}" aria-labelledby={group.id}>
-			<div class="group-heading">
-				<h2 id={group.id}>
-					<span class="group-marker" aria-hidden="true">/</span>{group.name}
-				</h2>
-				<span class="group-count">
-					{group.projects.length}<span class="sr-only">
-						{group.projects.length === 1 ? 'project' : 'projects'}</span
-					>
-				</span>
-			</div>
+			<h2 id={group.id}>{group.name}</h2>
 			<ul class="project-list">
 				{#each group.projects as project}
 					<ProjectRow {project} />
@@ -50,16 +41,6 @@
 </main>
 
 <style>
-	.sr-only {
-		position: absolute;
-		inline-size: 1px;
-		block-size: 1px;
-		padding: 0;
-		margin: -1px;
-		overflow: clip;
-		clip-path: inset(50%);
-		white-space: nowrap;
-	}
 	.groups {
 		display: flex;
 		flex-direction: column;
@@ -75,6 +56,12 @@
 	}
 	.color-magenta {
 		--group-color: var(--magenta);
+	}
+	.project-group h2 {
+		color: var(--group-color);
+		font-size: 0.8125rem;
+		letter-spacing: 0.04em;
+		padding-block-end: 0.75rem;
 	}
 	.group-heading {
 		display: flex;
