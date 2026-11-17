@@ -60,6 +60,7 @@
 	}
 	.project-description {
 		color: var(--muted);
+		font-family: var(--sans);
 		font-size: 0.8125rem;
 		line-height: 1.8;
 	}

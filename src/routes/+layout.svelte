@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '@fontsource/ibm-plex-mono/latin-400.css';
 	import '@fontsource/ibm-plex-mono/latin-500.css';
+	import '@fontsource/ibm-plex-sans/latin-400.css';
 	import favicon from '#lib/assets/favicon.svg';
 	import type { LayoutProps } from './$types';
 
@@ -49,6 +50,7 @@
 		--quiet: color-mix(in oklch, var(--ink) 58%, var(--paper));
 		--wash: color-mix(in oklch, var(--blue) 6%, var(--paper));
 		--mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+		--sans: 'IBM Plex Sans', system-ui, sans-serif;
 		color-scheme: dark;
 		font-family: var(--mono);
 		font-synthesis: none;
