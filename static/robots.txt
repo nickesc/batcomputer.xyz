@@ -1,0 +1,42 @@
+User-agent: *
+Disallow:
+
+# Established search, retrieval, and first-party AI crawlers are allowed
+# through the general policy above. This includes Googlebot, Bingbot,
+# Applebot, OAI-SearchBot, ChatGPT-User, GPTBot, Claude-SearchBot,
+# Claude-User, ClaudeBot, PerplexityBot, Perplexity-User,
+# Google-Extended, Applebot-Extended, Meta-ExternalAgent,
+# Meta-ExternalFetcher, and Amazonbot.
+
+# Bulk dataset and research crawlers
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: AI2Bot-DeepResearchEval
+User-agent: Brightbot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: Cotoyogi
+User-agent: Diffbot
+User-agent: FriendlyCrawler
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: imageSpider
+User-agent: img2dataset
+User-agent: Kangaroo Bot
+User-agent: laion-huggingface-processor
+User-agent: LAIONDownloader
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PanguBot
+User-agent: Panscient
+User-agent: panscient.com
+User-agent: Poseidon Research Crawler
+User-agent: SBIntuitionsBot
+User-agent: TikTokSpider
+User-agent: Timpibot
+User-agent: VelenPublicWebCrawler
+User-agent: Webzio-Extended
+Disallow: /
