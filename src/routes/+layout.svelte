@@ -140,7 +140,7 @@
 
 	.site-shell {
 		border: 1px solid var(--rule);
-		border-radius: 0.5rem;
+		border-radius: 4px;
 		background: var(--surface);
 	}
 	.site-footer {
@@ -167,8 +167,8 @@
 		padding-inline: 1.25rem;
 		background: var(--wash);
 		border-block-end: 1px solid var(--rule);
-		border-start-start-radius: 0.5rem;
-		border-start-end-radius: 0.5rem;
+		border-start-start-radius: 4px;
+		border-start-end-radius: 4px;
 		color: var(--muted);
 		font-size: 0.6875rem;
 	}
