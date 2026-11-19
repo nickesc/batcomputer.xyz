@@ -45,8 +45,13 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		padding-block: clamp(1.25rem, 0.75rem + 3vw, 3rem);
-		padding-inline: clamp(1.25rem, 0.75rem + 3vw, 3rem);
+		padding-block: 1rem;
+		padding-inline: 1.5rem;
+
+		@media screen and (min-width: 768px) {
+			padding-block: 1.25rem;
+			padding-inline: 3rem;
+		}
 	}
 	.color-green {
 		--group-color: var(--green);
@@ -85,7 +90,7 @@
 	}
 	.project-list {
 		padding: 0;
-		padding-inline-start: clamp(0.75rem, 0.5rem + 1vw, 1.5rem);
+		padding-inline-start: 1.5rem;
 		border-inline-start: 1px solid var(--rule);
 		list-style: none;
 	}

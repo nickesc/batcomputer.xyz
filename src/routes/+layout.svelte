@@ -16,7 +16,7 @@
 
 <a class="skip-link" href="#collection">Skip to projects</a>
 
-<div class="content-grid">
+<div class="page-container">
 	<div class="site-shell">
 		<header class="window-bar">
 			<img src={favicon} alt="" width="64" height="30" />
@@ -59,7 +59,9 @@
 		background: var(--paper);
 		text-wrap: pretty;
 		overflow-wrap: break-word;
-		scrollbar-gutter: stable;
+		scrollbar-gutter: stable both-edges;
+		scrollbar-width: thin;
+		scrollbar-color: var(--muted) transparent;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-text-size-adjust: 100%;
@@ -108,22 +110,14 @@
 		outline-offset: 4px;
 	}
 
-	.content-grid {
-		--gutter: clamp(1.125rem, 0.7rem + 2vw, 2.5rem);
-		--page-space: clamp(2.5rem, 1.5rem + 4vw, 5.5rem);
-		--content: 58rem;
-		--breakout: 76rem;
-		padding-block: var(--page-space);
-		display: grid;
-		grid-template-columns:
-			[full-width-start] minmax(var(--gutter), 1fr)
-			[breakout-start] minmax(0, calc((var(--breakout) - var(--content)) / 2))
-			[content-start] min(100% - var(--gutter) * 2, var(--content)) [content-end]
-			minmax(0, calc((var(--breakout) - var(--content)) / 2)) [breakout-end]
-			minmax(var(--gutter), 1fr) [full-width-end];
-	}
-	.content-grid > * {
-		grid-column: content;
+	.page-container {
+		padding-block: 0.5rem;
+		padding-inline: 0.1rem;
+
+		@media screen and (min-width: 768px) {
+			padding-block: 2.5rem;
+			padding-inline: 1.125rem;
+		}
 	}
 	.skip-link {
 		position: absolute;
@@ -139,6 +133,8 @@
 	}
 
 	.site-shell {
+		max-inline-size: 50rem;
+		margin-inline: auto;
 		border: 1px solid var(--rule);
 		border-radius: 4px;
 		background: var(--surface);
