@@ -115,6 +115,7 @@
 	.page-container {
 		padding-block: 0.5rem;
 		padding-inline: 0.1rem;
+		transition: padding 0.2s ease-in-out;
 
 		@media screen and (min-width: 768px) {
 			padding-block: 2.5rem;

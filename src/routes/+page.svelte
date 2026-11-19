@@ -47,6 +47,7 @@
 		gap: 2rem;
 		padding-block: 1rem;
 		padding-inline: 1.5rem;
+		transition: padding 0.2s ease-in-out;
 
 		@media screen and (min-width: 768px) {
 			padding-block: 1.25rem;
