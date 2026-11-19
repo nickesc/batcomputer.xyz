@@ -4,6 +4,8 @@
 	import '@fontsource/ibm-plex-sans/latin-400.css';
 	import favicon from '#lib/assets/favicon.svg';
 	import type { LayoutProps } from './$types';
+	import GitHub from '#lib/components/github.svelte';
+	import Source from '#lib/components/source.svelte';
 
 	let { children }: LayoutProps = $props();
 </script>
@@ -27,8 +29,8 @@
 
 		<footer class="site-footer">
 			<p>By <a href="https://nickesc.io">nickesc</a></p>
-			<a href="https://github.com/nickesc">GitHub</a>
-			<a href="https://github.com/nickesc/batcomputer.xyz">Source</a>
+			<a href="https://github.com/nickesc"> GitHub <GitHub /></a>
+			<a href="https://github.com/nickesc/batcomputer.xyz"> Source <Source /></a>
 		</footer>
 	</div>
 </div>
@@ -153,6 +155,12 @@
 	}
 	.site-footer p a {
 		color: var(--muted);
+	}
+
+	.site-footer a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.2rem;
 	}
 
 	.window-bar {

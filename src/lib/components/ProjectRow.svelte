@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { Project } from '#lib/data/catalog.js';
+	import Source from './source.svelte';
+	import Music from './music.svelte';
 
 	let { project }: { project: Project } = $props();
 </script>
@@ -15,10 +17,17 @@
 	{#if project.source || project.website}
 		<div class="project-extras">
 			{#if project.website}
-				<a href={project.website.url}>{project.website.label}</a>
+				<a href={project.website.url}
+					>{project.website.label}
+					{#if project.domain === 'mgic.batcomputer.xyz/current'}
+						<Music />
+					{/if}</a
+				>
 			{/if}
 			{#if project.source}
-				<a href={project.source} aria-label={`Source code for ${project.name}`}> Source </a>
+				<a href={project.source} aria-label={`Source code for ${project.name}`}>
+					Source <Source />
+				</a>
 			{/if}
 		</div>
 	{/if}
@@ -70,7 +79,7 @@
 	.project-extras a {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.5rem;
+		gap: 0.2rem;
 		color: var(--quiet);
 		font-size: 0.6875rem;
 	}
