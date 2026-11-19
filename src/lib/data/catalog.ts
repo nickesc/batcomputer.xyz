@@ -39,6 +39,13 @@ export const groups: Group[] = [
 				url: 'https://dnd.batcomputer.xyz',
 				domain: 'dnd.batcomputer.xyz',
 				source: 'https://github.com/nickesc/dnd-interactive-sheet'
+			},
+			{
+				name: 'CIA Decrypter for iOS',
+				url: 'https://cia-decrypter.batcomputer.xyz',
+				source: 'https://github.com/nickesc/cia-decrypter-ios',
+				description: 'Decrypt and convert Nintendo 3DS CIA files on an iPhone or iPad.',
+				domain: 'cia-decrypter.batcomputer.xyz'
 			}
 		]
 	},
